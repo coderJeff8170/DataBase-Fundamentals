@@ -1,0 +1,94 @@
+the GUI is the object explore or SSMS (sequel server mgmt system)
+
+hit the NEW QUERY button to bring up the query window
+
+tables are organized into columns and rows (domains and entities!)
+
+columns rep kind of data
+
+rows are instances of the one type of data, like a name or a product
+
+Normalization: 
+
+design database to reduce redundancy
+reduction of redundancy
+each piece of data should be only stored once ideally
+
+indexes: 
+faster way to look up data
+a cross reference of sorts
+indexes duplicate key pieces of data and store them in sorted order
+
+Constraints: 
+
+way for sql server to prevent certain kinds of illegal data from entering a table (like verification)
+created and applied as part of db design and enforced by server
+breaking a constraint results in an error and operation is aborted.
+
+types:
+
+Unique: each value totally differnt
+check: specific data types or values
+default: a default!
+not null: must contain a value
+primary key: enforces unique value in column
+foreign key: column may only contain values that appear in primary key
+column of ref. table.
+
+Primary key: field or fields that uniquely defin a record
+is a constraint
+permits column to be ref for foreign key
+table can only have one primary key
+an id number would be an example
+sometimes made up or not (like a ssn)
+
+Foreign Key: key that refernces a primary key in another table
+usedto enforce referential integrity:
+the order table has a cust id column and that can only contain value sfrom teh id colun of the cust id table
+
+composite keys - key includes multi columns
+may be dsignated as primary key
+
+eg: combining more than one key to create a key, often a primary one
+
+SQL structured query language: 
+Microsofts version is called 'transact-sql'
+	Two branches: data definition language and data manipulation language (DDL and DML)
+
+DDL is used on the objects
+DML is used on the data itself
+
+Syntax: case insensitive - keywords are by convention uppercase, and end with semicolon.
+white space insensitive
+
+comments like js or css /*  blah blah blah */
+single line comment is -- 
+
+SELECT is one of the most common statements
+retrieve oneor more rows
+
+DML Understading:
+used to insert data in, update and query a db
+
+SELECT retrieves data
+INSERT add rows
+UPDATE change values in table
+DELETE obv!
+MERGE insert update, or delete based on another query result (JOINS)
+
+Data definntion:
+
+used to crateed the framework for the database the chema or both
+USE: db you're using
+CREATE: create obj
+ALTER modify obj
+DROP remove obj
+TRUNCATE: remove obj - will remove all unused space from db
+
+if you can't find an obj you just creaated, REFRESH!!
+
+
+
+
+
+

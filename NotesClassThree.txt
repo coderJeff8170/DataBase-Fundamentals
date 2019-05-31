@@ -1,0 +1,63 @@
+On the hub, - discount software while you're a student!
+click link through CPCC main site. Search for on the hub - affordable tech.
+
+foreign key relates tables together using one table's primary key.
+
+
+DBMS is what stores and manages the databasese. The GUI is just a tool to make it easier.
+
+Lesson 2: Creating DB Objects!
+
+DataTypes:
+
+Each column requires a datatype - the right kind is important for good dB design. Indicates type of data column will store.
+
+Can be difficult to change once table contains data.
+
+Data Type Catedories:
+
+Exact numeric, approx numeric, date and time, char strings, unicode char strings, binary strings, other
+
+Built-In and User-Defined Data Types:
+
+built in are normally sufficient, but programmers can create their own (rare)
+
+Built-In: 
+
+Money(numeric), Datetime, integer, char, varchar, boolean, float
+
+Numeric: 
+Int: Primary Integer
+Bit: 0, 1, or Null
+Decimal and Numeric: fixed precision and scale
+Money and smallmoney: Monetary values
+Real or float: more precision, not oft used
+
+Date & Time:
+Date, datetime, datetime2, datetimeoffset, smalldatetime, and time
+differing ranges, for efficiency
+datetimeoffset tracks timezone
+
+String:
+NChar, NVarChar - for unicode (international languages, 2bytes as opposed to one - the unicode double byte character set (DBCS)
+Char: Fixed length 1 byte per letter as opposed to 2 with VarChar
+VarChar(x) Variable length up to max declared, stored in row
+VarChar(MAX) up to 8kb in row, max 2gig
+
+look up the data type list and see how many bytes things take up
+
+Blob - binary large object 
+stored outside the page - on one or more successive pages
+main row has pointer to blob
+Good for blocks of text, image data, binary file data, movies etc.
+not the most efficient thing for SQLServer - use SQL filestream instead.
+
+Creating tables in the GUI
+
+To get rid of the red squiggly lines, as long as everything is working 'CTRL SHIFt R' baby whoo hoo!!!
+
+dbo = database only
+
+
+
+

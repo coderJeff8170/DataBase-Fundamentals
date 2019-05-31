@@ -1,0 +1,74 @@
+implicit conversion - sql server will automatically convert between data types
+imposes a performance hit.
+
+Explicit - you have to tell MSSQL to do it
+
+CAST
+
+CONVERT 
+
+implicit vs explicit conversion chart
+
+when sql has to implicity convert, the processing time takes a hit.
+even explicit has that cost.
+Best to ensure the proper data type in the first place.
+
+Join the SQL user group that meets at Microsoft off arrowwood rd.
+
+need to support db that already exist
+manipulating data is a core job skill
+
+SQL server stores it's own config in system tables
+
+Not meant to be messed with but knowing about them can be powerful
+
+Muck about with system tables - look it up but only click on Microsoft links...
+
+sys.*
+sys.tables
+sys.columns
+sys.databases, etc
+
+VIEWS:
+Another way of looking at data in table
+Can: combined columns from multiple tables
+	contain a subset of columns from multiple tables
+	constain a subset of rows from multiple tables
+	add calculated columns based on underlying data in tables
+	and so on..
+
+think of a view as a virtual table.
+
+Why views?
+
+Treats info as if it's it's own table 
+Convenient
+Secure
+Simple
+Performance
+
+Create a synonmym - for files you knwo the name is going to change, or if you're operating from a differnt database consistently.
+
+The syntax is 
+
+
+Stored Procedures: 
+
+Purpose: batch files or script tells SQL to execute ina given order
+good way to modularize specific tasks
+can accept input and produce output, although not mandatory
+execute on server, reduce strain on clients.
+
+Why?
+Convenience - complex business logic in single easy to use unit
+security - prevent access to underlying data
+centralization - functional code on SQL server wher it's more easily updated than when doce is distributed
+performance - SWLS can cache the exe3cutiong plan for a proceduer, enabling ti to rerun the prodedure int he ruthre with less overhead
+security - lets you enforce best practices by disallowing direct queries, and instead forcing the use of procedures you've writeen
+
+Creating in the gui
+
+DDL
+
+
+

@@ -1,0 +1,59 @@
+database is an organized way of storing similar data, made for manipulating data quickly.
+input, namage organize and retrieve data quickly
+rows and columns
+
+like a filing cabinet
+
+data collected by user actions
+
+stored on the database
+
+
+Key Terms: 
+
+Query: instruction for retrieving data
+
+INdex: data structure that helps to speed up selected queries
+
+database server: server taht stores databases and responds to  queries - often one default and a few instances - multiple servers speed performance and increase security.
+sometimes used in a low level environment like a sandbox - on it's own. High availability.
+Often a high end machine
+can be and often is remote
+fast! lots of memory. many multicore processors. fast connections. multiple machines.
+Access: typically limited - typically log in over a network. Commands issued remotely, processeed and returned by the DBMS
+Storage: three types of file:
+	MDF primary data file
+	LDF log file
+	NDF secondary dataa file
+local machine can be a server 
+
+database mgmt system: collection of apps that enables you to enter organize and select data eg: Sequel server SQL is a relational DBMS
+the word relational is irrelevant - both terms are interchangeable - the important thing is the DBMS is a system, the collection of programss needed 
+to manipulate the data.
+
+prevent replication andinmprove performance
+
+flat file databases - super simple rows and columns - other filetypes comma separated values(CSV), tab delimited (TDF) - text files 
+
+heirarchical databases - like a family tree, parent items with child items. (one to many)
+
+relational databases - multiple flat-file databases which are connected or related in some way. (one to many, or many to many)
+
+database vs spreadsheet:
+
+	both can:
+	
+	organized into tables
+	columns can do calculations and formulas
+
+	only dbs can:
+
+	massive amounts of data
+	query data quickly
+	able to maximize resources and users
+
+
+	
+
+
+
