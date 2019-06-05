@@ -1,0 +1,77 @@
+any changes you make to the model database will show in future created databases.
+
+companies rely on views. View is like a virtual table, not accessible, but viewable.
+
+Stored procedures!!
+
+Batch files or scripts that tell sQL server to execute a set of commands in a set order
+a great way to modularize specific things
+accept input and produce output, even tho don't have to do either
+execute on the server, reduce strain on the client. faster!
+Like macros!
+
+convenient - packages complicated bus. logic into a single easy to use unit - modularized
+security - prevent access to underlying datat
+centralization - puts funcitonal code on sql servder where it's easy to update
+performance - execution cached so after first time, runs faster
+performance - forces best practices by disallowing direct queries
+
+SQL injection: 
+
+when you dynamically construct a query based on user input, you open yourself up to a kind of attack called a sql injection
+
+the attackerprovides input that modifies the sql query to display data that's not yours, modify data, or even delete data
+
+store procedures can help avoid SQL injection by sequestering 
+
+could destroy database
+common hacking technique
+placement of malicious code in sql statements via web input
+
+never trust user input!
+properly escape and analyze user input for known attak forms
+USE STORED PROCEDURES!
+
+Lesson 3 - Manipulating Data
+
+Using queries to select data:
+
+Use SELECT
+Basic, retrieve or as a join
+Combine with where clause to retrieve just rows you need
+you would also combine with a comparison operator to further specify
+Note strings get single quotes
+
+combine conditions
+Boolean operators: AND (true if both sub comparisons are true),
+ OR (true if either or both sub comparisons are true),
+ NOT (reverses true or false)
+
+
+use between clause - returns everything meeting parameters(inclusive)
+(where hiredate BETWEEN '2000-01-01' AND '2000-12-01')
+
+use the NOT clause
+
+
+the UNION clause
+combines the results of two or more queries
+number and order of columsn must be same for each subquery
+datatypes must be compatible
+fintal reslut set will only incule the rows that were present in both subqueries
+eg: 
+SELECT first, last FROM Employees WHERE Dept = 'Shipping'
+UNION
+SELECT first, last FROM Employees
+WHERE HireDate BETWEEN '2001-01-10' AND '2002-12-31'
+
+
+Except and INtersetc
+compare result of two queries and return values
+Intersect will return common values
+Except will return everything but common values
+eg:
+SELECT ProdID from Products
+INTERSECT
+SELECT ProdID from Customers
+

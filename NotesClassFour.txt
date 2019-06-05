@@ -4,8 +4,7 @@ imposes a performance hit.
 Explicit - you have to tell MSSQL to do it
 
 CAST
-
-CONVERT 
+CONVERT - same functionality, one's microsoft, one's not.
 
 implicit vs explicit conversion chart
 
